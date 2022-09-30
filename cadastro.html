@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Grupo 3</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <form class="form-cad" method="post">
+                <label for="name">
+                    Nome*:<br>
+                    <input type="text" name="name" required placeholder="Digite seu nome"
+                        oninvalid="this.setCustomValidity('O Campo nome é obrigatório')"
+                        oninput="this.setCustomValidity('')"
+                        />
+                </label>
+                <label for="email">
+                    Email*:<br>
+                    <input type="email" name="email" required placeholder="Digite seu email"
+                        oninvalid="this.setCustomValidity('O Campo e-mail é obrigatório')"
+                        oninput="this.setCustomValidity('')"
+                        />
+                </label>
+                <label for="password">
+                    Senha*:<br>
+                    <input type="password" required name="password" id="password" 
+                        placeholder="Digite a senha" 
+                        oninvalid="this.setCustomValidity('O Campo senha é obrigatório')"
+                        oninput="this.setCustomValidity('')"
+                        />
+                </label>
+                <label for="confirm-password">
+                    Confirme a senha*:<br>
+                    <input type="password" required name="confirm-password" id="confirm-password" 
+                        placeholder="Confirme a senha" 
+                        oninvalid="this.setCustomValidity('O Campo confirme a senha é obrigatório')"
+                        oninput="this.setCustomValidity('')"
+                        />
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
